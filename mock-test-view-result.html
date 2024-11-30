@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <link rel="stylesheet" href="Assets/css/studentstyle.css">
+    <title>Mock Test View Result</title>
+</head>
+
+<style>
+    .solution {
+        display: none;
+    }
+
+    .list-group-item.active {
+        background-color: #F6821F;
+        color: white;
+    }
+    .list-group-item {
+        border-radius: 8px !important; 
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="d-flex">
+         <!-- Sidebar -->
+         <div class="sidebar d-flex flex-column overflow-auto">
+            <div class="logo mt-3 mb-5">
+                <a href="dashboard-packages.html">
+                    <img src="Assets/Images/png/dashboardLogo.png" class="img-fluid object-fit-contain" alt="Logo"
+                        style="height: 60px;">
+                </a>
+            </div>
+            <div class="mx-2 my-4 student-profile-section">
+                <div class="d-flex justify-content-center select_profile_img">
+                    <img src="Assets/Images/svg/user_profile.svg" class="modal_profile" alt="Profile">
+                    <div class="position-relative">
+                        <a
+                            class="secondary fs-16 fw-500 edit_img d-flex justify-content-center align-items-center cursor-pointer">
+                            <img src="Assets/Images/svg/profile_editng.svg" alt="Edit Profile">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile_text mb-4 text-center">
+                    <h2 class="white medium-text fw-600">Rohit Sharma</h2>
+                    <h3 class="white small-text fw-400">12th Class (English)</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="dashboard-packages.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/packages.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Packages</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="study-material.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Study Materials.svg" alt="Menu Icon">
+                            <div class="d-flex gap-2 align-items-center">
+                                <h1 class="white small-medium-text fw-600 mb-0"
+                                    style="margin-top: 1px; white-space: nowrap;">Study Materials</h1>
+                                <span class="Caption Basics fw-600">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="mock-test.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderActive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Mock Test.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Mock Test</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="order-history.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Order History.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Order History</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="change-password.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Change Password.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Change Password
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="profile.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/user.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Profile
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="mainLayout-content">
+            <nav class="topnavbar d-flex align-items-center justify-content-between">
+                <h4 class="blue mb-0 sub-large-text-one fw-600">Welcome</h4>
+                <div class="right-admin-profile d-flex align-items-center" style="padding-right: 30px;">
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="cart.html">
+                            <img src="Assets/Images/svg/addtocart.svg" alt="Add to Cart">
+                        </a>
+                        <a href="notification.html">
+                            <img src="Assets/Images/svg/student_notification.svg" alt="Notification">
+                        </a>
+                        <div class="Button-navbar ms-auto position-relative">
+                            <img src="Assets/Images/svg/powerbutton.svg" alt="Logout" class="cursor-pointer">
+                            <!-- Dropdown Menu (if needed) -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main_content contentSection scroll_bar">
+                <div class="mb-4 d-flex justify-content-between align-items-center">
+                    <h1 class="black sub-large-text-one fw-700 mb-0">Bharat SAT Exam & 3 Mock Test</h1>
+                    <a href="path-to-showresult-page.html" class="d-flex" style="padding-right: 10px;">
+                        <h4 class="Caption fw-600 mb-0">
+                            <span class="orangeAccentColor">Back</span> &gt;
+                        </h4>
+                    </a>
+                </div>
+                <div class="table_container" style="display: block;">
+                    <div class="Performancesection">
+                        <h3 class="blue small-medium-text fw-700 mb-0">My Overall Performance Summary</h3>
+                        <div class="d-flex row gap-5 mt-4">
+                            <div class="d-flex col-md-2 gap-2 align-items-center">
+                                <div class="view-result-icon green">
+                                    <img src="Assets/Images/png/fileplus.png" alt="File Plus" />
+                                </div>
+                                <div>
+                                    <h3 class="medium-text fw-600 mb-0">60/100</h3>
+                                    <span class="small-text captioncolor fw-500">Marks</span>
+                                </div>
+                            </div>
+                            <div class="d-flex col-md-2 gap-2 align-items-center">
+                                <div class="view-result-icon magenta">
+                                    <img src="Assets/Images/png/time_taken.png" alt="Time Taken" />
+                                </div>
+                                <div>
+                                    <h3 class="medium-text fw-600 mb-0">0:20:18</h3>
+                                    <span class="small-text captioncolor fw-500">Time Taken</span>
+                                </div>
+                            </div>
+                            <div class="d-flex col-md-2 gap-2 align-items-center">
+                                <div class="view-result-icon golden">
+                                    <img src="Assets/Images/png/attempted.png" alt="Attempted" />
+                                </div>
+                                <div>
+                                    <h3 class="medium-text fw-600 mb-0">30/100</h3>
+                                    <span class="small-text captioncolor fw-500">Attempted</span>
+                                </div>
+                            </div>
+                            <div class="d-flex col-md-2 gap-2 align-items-center">
+                                <div class="view-result-icon pink">
+                                    <img src="Assets/Images/png/correct.png" alt="Correct" />
+                                </div>
+                                <div>
+                                    <h3 class="medium-text fw-600 mb-0">25/100</h3>
+                                    <span class="small-text captioncolor fw-500">Correct</span>
+                                </div>
+                            </div>
+                            <div class="d-flex col-md-2 gap-2 align-items-center">
+                                <div class="view-result-icon orangebg">
+                                    <img src="Assets/Images/png/incorrect.png" alt="Incorrect" />
+                                </div>
+                                <div>
+                                    <h3 class="medium-text fw-600 mb-0">5/100</h3>
+                                    <span class="small-text captioncolor fw-500">Incorrect</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul
+                        class="small-medium-text flex-wrap fw-600 list-group list-group-horizontal gap-1 mb-3 mt-4 text-white">
+                        <li class="list-group-item border-0 active" onclick="setActiveTab('English')">English</li>
+                        <li class="list-group-item border-0" onclick="setActiveTab('Hindi')">Hindi</li>
+                        <li class="list-group-item border-0" onclick="setActiveTab('Mathematics')">Mathematics</li>
+                        <li class="list-group-item border-0" onclick="setActiveTab('History')">History</li>
+                        <li class="list-group-item border-0" onclick="setActiveTab('Geography')">Geography</li>
+                        <li class="list-group-item border-0" onclick="setActiveTab('Science')">Science</li>
+                    </ul>
+                    <section class="small-medium-text fw-600 my-4">
+                        <div class="my-4">
+                            <!-- Repeat for each question -->
+                            <div class="my-4 border-question pb-4">
+                                <div class="small-medium-text fw-600 mb-3">
+                                    Question 1 <span style="color: green;">(+2 marks)</span>
+                                </div>
+                                <div class="small-medium-text fw-600">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                                </div>
+                                <ol class="list-group mt-4">
+                                    <li
+                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                        <div class="ms-2 me-auto form-check">
+                                            <input class="form-check-input" type="checkbox" checked>
+                                            <label class="form-check-label small-medium-text fw-500 px-2">
+                                                A. 78
+                                                <span class="text-danger small-text ms-3 fw-600"
+                                                    style="font-style: italic;">
+                                                    Incorrect Answer
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                        <div class="ms-2 me-auto form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label small-medium-text fw-500 px-2">
+                                                B. 67
+                                                <span class="text-success small-text ms-3 fw-600"
+                                                    style="font-style: italic;">
+                                                    Correct Answer
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <!-- Add more options as needed -->
+                                </ol>
+                                <div class="d-flex gap-2 align-items-center mt-2">
+                                    <div class="d-flex gap-1 align-items-center">
+                                        <img src="Assets/Images/png/light_bulb.png" alt="Light Bulb Icon">
+                                        <div>
+                                            <h3 class="small-medium-text fw-600 mb-0">Solution</h3>
+                                        </div>
+                                    </div>
+                                    <div class="borderBottom dotted orangeAccentColor"
+                                        style="font-style: italic; cursor: pointer;" onclick="toggleSolution(0)">
+                                        <h3 class="small-medium-text fw-600 orangeAccentColor mb-0">Show</h3>
+                                    </div>
+                                </div>
+                                <div id="solution-0" class="solution mt-3" style="line-height: 24px;">
+                                    <div class="small-medium-text fw-600">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Repeat for more questions -->
+                        </div>
+                        <div class="d-flex justify-content-between small-medium-text fw-400"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <script>
+        // Set the active tab
+        function setActiveTab(tab) {
+            const tabs = document.querySelectorAll('.list-group-item');
+            tabs.forEach(t => {
+                t.classList.remove('active');
+                t.style.backgroundColor = 'transparent';
+            });
+            const activeTab = Array.from(tabs).find(t => t.textContent.trim() === tab);
+            if (activeTab) {
+                activeTab.classList.add('active');
+                activeTab.style.backgroundColor = '#F6821F';
+            }
+        }
+
+        // Toggle the solution visibility
+        function toggleSolution(index) {
+            const solution = document.getElementById(`solution-${index}`);
+            const button = solution.previousElementSibling.querySelector('h3');
+            if (solution.style.display === 'none' || solution.style.display === '') {
+                solution.style.display = 'block';
+                button.textContent = 'Hide';
+            } else {
+                solution.style.display = 'none';
+                button.textContent = 'Show';
+            }
+        }
+    </script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+</body>
+
+</html>

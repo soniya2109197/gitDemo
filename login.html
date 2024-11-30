@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/studentstyle.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="login container">
+        <div class="row h-100">
+            <!-- LEFT LOGIN IMAGE -->
+            <div class="col-md-6 m-auto">
+                <div class="text-center d-none d-md-block">
+                    <div class="position-absolute">
+                        <h2 class="Small-Heading fw-600 loginbackground position-relative text-white text-start">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </h2>
+                    </div>
+                    <img src="Assets/Images/png/studentpanel.png" class="w-100" alt="Login Image" />
+                </div>
+            </div>
+            <!-- RIGHT SIDE -->
+            <div class="col-md-6 m-auto">
+                <!-- Auth BOX -->
+                <div class="login_img" id="btn1">
+                    <div class="col-md-7 m-auto">
+                        <div class="d-flex justify-content-center login_logo">
+                            <img src="Assets/Images/svg/logo.svg" class="img-fluid" style="height: 70px;" alt="Logo" />
+                        </div>
+                        <div class="mb-4 text-center">
+                            <h3 class="black large-text-student fw-600">Welcome Back!</h3>
+                            <h4 class="small-medium-text fw-500 black mb-0">Enter your Credentials to access your account</h4>
+                        </div>
+                        <form class="position-relative">
+                            <div class="form-group mb-3 d-flex flex-column">
+                                <label for="email" class="login_heading fw-600">Email Id
+                                    <span class="danger">*</span>
+                                </label>
+                                <div class="position-relative">
+                                    <img src="Assets/Images/svg/email.svg" class="input_icons" alt="Email Icon" />
+                                    <input type="text" id="email" name="email" class="w-100 medium-text fw-400 custom-form-input profile_input" placeholder="Enter your email id" />
+                                </div>
+                                <span class="danger fs-14 fw-400 mt-1"></span> <!-- Error message placeholder -->
+                            </div>
+                            <div class="form-group mb-3 d-flex flex-column">
+                                <label for="password" class="login_heading fw-600">Password
+                                    <span class="danger">*</span>
+                                </label>
+                                <div class="position-relative">
+                                    <img src="Assets/Images/svg/lock.svg" class="input_icons" alt="Lock Icon" />
+                                    <input type="password" id="password" name="password" class="w-100 medium-text fw-400 custom-form-input profile_input pe-5" placeholder="Enter your password" />
+                                    <img src="Assets/Images/svg/eye.svg" class="eye_icon cursor-pointer input-lock-icon" alt="Show/Hide Password" />
+                                </div>
+                                <span class="danger fs-14 fw-400 mt-1"></span> <!-- Error message placeholder -->
+                            </div>
+                            <a href="forgot-password.html">
+                                <h4 class="forgot mb-4 right_menu_toggle">Forgot password?</h4>
+                            </a>
+                            <a href="dashboard.html" type="submit" style="text-transform: none; white-space: nowrap;" class="btn login_btn small-text fw-600 m-0 singleLine w-100">
+                                Login
+                            </a>
+                            <div class="text-center mt-4">
+                                <h4 class="small-medium-text fw-600 black mb-0">Don’t have an account?
+                                    <a href="student-registration.html">
+                                        <span class="orangeAccentColor cursor-pointer">Register</span>
+                                    </a>
+                                </h4>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+</body>
+
+</html>

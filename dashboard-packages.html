@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <link rel="stylesheet" href="Assets/css/studentstyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <title>Student Dashboard</title>
+</head>
+<style>
+    .modal-backdrop.show {
+        opacity: 0;
+    }
+
+    .small_modal {
+        max-width: 366px !important;
+    }
+
+    .profile_modal {
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - var(--bs-modal-margin)* 6);
+        }
+    }
+</style>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div class="sidebar d-flex flex-column overflow-auto">
+            <div class="logo mt-3 mb-5">
+                <a href="dashboard-packages.html">
+                    <img src="Assets/Images/png/dashboardLogo.png" class="img-fluid object-fit-contain" alt="Logo"
+                        style="height: 60px;">
+                </a>
+            </div>
+            <div class="mx-2 my-4 student-profile-section">
+                <div class="d-flex justify-content-center select_profile_img">
+                    <img src="Assets/Images/svg/user_profile.svg" class="modal_profile" alt="Profile">
+                    <div class="position-relative" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        <a
+                            class="secondary fs-16 fw-500 edit_img d-flex justify-content-center align-items-center cursor-pointer">
+                            <img src="Assets/Images/svg/profile_editng.svg" alt="Edit Profile">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile_text mb-4 text-center">
+                    <h2 class="white medium-text fw-600">Rohit Sharma</h2>
+                    <h3 class="white small-text fw-400">12th Class (English)</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="dashboard-packages.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderActive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/packages.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Packages</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="study-material.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Study Materials.svg" alt="Menu Icon">
+                            <div class="d-flex gap-2 align-items-center">
+                                <h1 class="white small-medium-text fw-600 mb-0"
+                                    style="margin-top: 1px; white-space: nowrap;">Study Materials</h1>
+                                <span class="Caption Basics fw-600">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="mock-test.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Mock Test.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Mock Test</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="order-history.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Order History.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Order History</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="change-password.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Change Password.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Change Password
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="profile.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/user.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Profile
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="mainLayout-content">
+            <nav class="topnavbar d-flex align-items-center justify-content-between">
+                <h4 class="blue mb-0 sub-large-text-one fw-600">Welcome</h4>
+                <div class="right-admin-profile d-flex align-items-center" style="padding-right: 30px;">
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="cart.html">
+                            <img src="Assets/Images/svg/addtocart.svg" alt="Add to Cart">
+                        </a>
+                        <a href="notification.html">
+                            <img src="Assets/Images/svg/student_notification.svg" alt="Notification">
+                        </a>
+                        <div class="Button-navbar ms-auto position-relative">
+                            <img src="Assets/Images/svg/powerbutton.svg" alt="Logout" class="cursor-pointer">
+                            <!-- Dropdown Menu (if needed) -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main_content contentSection scroll_bar">
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                    <h1 class="black sub-large-text-one fw-700 mb-0">Packages</h1>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-4 d-flex py-4">
+                            <div class="border-0 bg-transparent mx-3 gap-3" style="width: 100%;">
+                                <img src="Assets/images/png/Frame 41.png" class="card-img-top" alt="Package Image">
+                                <div class="bg-transparent">
+                                    <h2 class="large-text fw-700 mt-3 mb-0">BHARAT SAT EXAM & 3 Mock Test</h2>
+                                    <p class="hrline text-end pb-3 mt-2">
+                                        <a href="packages-details.html" class="small-medium-text fw-600"
+                                            style="color: #F6821F;">Package Details</a>
+                                    </p>
+                                    <div class="d-flex gap-3">
+                                        <span class="disprice Small-Heading fw-600">&#x20b9;1359</span>
+                                        <del class="originalprice medium-text fw-400">&#x20b9;1559</del>
+                                    </div>
+                                </div>
+                                <button type="submit" style="text-transform: none; white-space: nowrap;"
+                                    class="btn login_btn small-text fw-600 m-0 singleLine addtocardbtn w-100 mt-3">
+                                    Add To Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex py-4">
+                            <div class="border-0 bg-transparent mx-3 gap-3" style="width: 100%;">
+                                <img src="Assets/images/png/Frame 41.png" class="card-img-top" alt="Package Image">
+                                <div class="bg-transparent">
+                                    <h2 class="large-text fw-700 mt-3 mb-0">BHARAT SAT EXAM & 3 Mock Test</h2>
+                                    <p class="hrline text-end pb-3 mt-2">
+                                        <a href="packages-details.html" class="small-medium-text fw-600"
+                                            style="color: #F6821F;">Package Details</a>
+                                    </p>
+                                    <div class="d-flex gap-3">
+                                        <span class="disprice Small-Heading fw-600">&#x20b9;1359</span>
+                                        <del class="originalprice medium-text fw-400">&#x20b9;1559</del>
+                                    </div>
+                                </div>
+                                <button type="submit" style="text-transform: none; white-space: nowrap;"
+                                    class="btn login_btn small-text fw-600 m-0 singleLine addtocardbtn w-100 mt-3">
+                                    Add To Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex py-4">
+                            <div class="border-0 bg-transparent mx-3 gap-3" style="width: 100%;">
+                                <img src="Assets/images/png/Frame 41.png" class="card-img-top" alt="Package Image">
+                                <div class="bg-transparent">
+                                    <h2 class="large-text fw-700 mt-3 mb-0">BHARAT SAT EXAM & 3 Mock Test</h2>
+                                    <p class="hrline text-end pb-3 mt-2">
+                                        <a href="packages-details.html" class="small-medium-text fw-600"
+                                            style="color: #F6821F;">Package Details</a>
+                                    </p>
+                                    <div class="d-flex gap-3">
+                                        <span class="disprice Small-Heading fw-600">&#x20b9;1359</span>
+                                        <del class="originalprice medium-text fw-400">&#x20b9;1559</del>
+                                    </div>
+                                </div>
+                                <button type="submit" style="text-transform: none; white-space: nowrap;"
+                                    class="btn login_btn small-text fw-600 m-0 singleLine addtocardbtn w-100 mt-3">
+                                    Add To Cart
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 d-flex py-4">
+                            <div class="border-0 bg-transparent mx-3 gap-3" style="width: 100%;">
+                                <img src="Assets/images/png/Frame 41.png" class="card-img-top" alt="Package Image">
+                                <div class="bg-transparent">
+                                    <h2 class="large-text fw-700 mt-3 mb-0">BHARAT SAT EXAM & 3 Mock Test</h2>
+                                    <p class="hrline text-end pb-3 mt-2">
+                                        <a href="packages-details.html" class="small-medium-text fw-600"
+                                            style="color: #F6821F;">Package Details</a>
+                                    </p>
+                                    <div class="d-flex gap-3">
+                                        <span class="disprice Small-Heading fw-600">&#x20b9;1359</span>
+                                        <del class="originalprice medium-text fw-400">&#x20b9;1559</del>
+                                    </div>
+                                </div>
+                                <button type="submit" style="text-transform: none; white-space: nowrap;"
+                                    class="btn login_btn small-text fw-600 m-0 singleLine addtocardbtn w-100 mt-3">
+                                    Add To Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex py-4">
+                            <div class="border-0 bg-transparent mx-3 gap-3" style="width: 100%;">
+                                <img src="Assets/images/png/Frame 41.png" class="card-img-top" alt="Package Image">
+                                <div class="bg-transparent">
+                                    <h2 class="large-text fw-700 mt-3 mb-0">BHARAT SAT EXAM & 3 Mock Test</h2>
+                                    <p class="hrline text-end pb-3 mt-2">
+                                        <a href="packages-details.html" class="small-medium-text fw-600"
+                                            style="color: #F6821F;">Package Details</a>
+                                    </p>
+                                    <div class="d-flex gap-3">
+                                        <span class="disprice Small-Heading fw-600">&#x20b9;1359</span>
+                                        <del class="originalprice medium-text fw-400">&#x20b9;1559</del>
+                                    </div>
+                                </div>
+                                <button type="submit" style="text-transform: none; white-space: nowrap;"
+                                    class="btn login_btn small-text fw-600 m-0 singleLine addtocardbtn w-100 mt-3">
+                                    Add To Cart
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex py-4">
+                            <div class="border-0 bg-transparent mx-3 gap-3" style="width: 100%;">
+                                <img src="Assets/images/png/Frame 41.png" class="card-img-top" alt="Package Image">
+                                <div class="bg-transparent">
+                                    <h2 class="large-text fw-700 mt-3 mb-0">BHARAT SAT EXAM & 3 Mock Test</h2>
+                                    <p class="hrline text-end pb-3 mt-2">
+                                        <a href="packages-details.html" class="small-medium-text fw-600"
+                                            style="color: #F6821F;">Package Details</a>
+                                    </p>
+                                    <div class="d-flex gap-3">
+                                        <span class="disprice Small-Heading fw-600">&#x20b9;1359</span>
+                                        <del class="originalprice medium-text fw-400">&#x20b9;1559</del>
+                                    </div>
+                                </div>
+                                <button type="submit" style="text-transform: none; white-space: nowrap;"
+                                    class="btn login_btn small-text fw-600 m-0 singleLine addtocardbtn w-100 mt-3">
+                                    Add To Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- modal profile -->
+        <div class="modal fade profile_modal" id="exampleModalToggle" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered mx-auto ms-0 small_modal">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close small-medium-text" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body pt-0">
+                        <h1 class="black sub-large-text-one fw-700 mb-0 text-center mb-4">Update Profile Picture</h1>
+                        <div class="d-flex justify-content-center">
+                            <img class="modal_profile" style="object-fit: cover;"
+                                src="Assets/Images/svg/user_profile.svg" alt="Profile Picture">
+                        </div>
+                        <div class="d-flex justify-content-center flex-column align-items-center gap-2 mt-4">
+                            <button type="button"
+                                class="btn login_btn small-text fw-600  m-0 singleLine start-test-btn">Update
+                                Photo</button>
+                            <button type="button"
+                                class="orangeAccentColor small-text fw-600  m-0 singleLine start-test-btn border-0 bg-transparent">Delete
+                                Photo</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+</body>
+
+</html>

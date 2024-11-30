@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <link rel="stylesheet" href="Assets/css/studentstyle.css">
+    <title>Start Test</title>
+</head>
+<style>
+    .content-section {
+        display: none;
+    }
+
+    .active-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="d-flex">
+         <!-- Sidebar -->
+         <div class="sidebar d-flex flex-column overflow-auto">
+            <div class="logo mt-3 mb-5">
+                <a href="dashboard-packages.html">
+                    <img src="Assets/Images/png/dashboardLogo.png" class="img-fluid object-fit-contain" alt="Logo"
+                        style="height: 60px;">
+                </a>
+            </div>
+            <div class="mx-2 my-4 student-profile-section">
+                <div class="d-flex justify-content-center select_profile_img">
+                    <img src="Assets/Images/svg/user_profile.svg" class="modal_profile" alt="Profile">
+                    <div class="position-relative">
+                        <a
+                            class="secondary fs-16 fw-500 edit_img d-flex justify-content-center align-items-center cursor-pointer">
+                            <img src="Assets/Images/svg/profile_editng.svg" alt="Edit Profile">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile_text mb-4 text-center">
+                    <h2 class="white medium-text fw-600">Rohit Sharma</h2>
+                    <h3 class="white small-text fw-400">12th Class (English)</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="dashboard-packages.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/packages.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Packages</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="study-material.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Study Materials.svg" alt="Menu Icon">
+                            <div class="d-flex gap-2 align-items-center">
+                                <h1 class="white small-medium-text fw-600 mb-0"
+                                    style="margin-top: 1px; white-space: nowrap;">Study Materials</h1>
+                                <span class="Caption Basics fw-600">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="mock-test.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderActive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Mock Test.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Mock Test</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="order-history.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Order History.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Order History</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="change-password.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Change Password.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Change Password
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="profile.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/user.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Profile
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="mainLayout-content">
+            <nav class="topnavbar d-flex align-items-center justify-content-between">
+                <h4 class="blue mb-0 sub-large-text-one fw-600">Welcome</h4>
+                <div class="right-admin-profile d-flex align-items-center" style="padding-right: 30px;">
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="cart.html">
+                            <img src="Assets/Images/svg/addtocart.svg" alt="Add to Cart">
+                        </a>
+                        <a href="notification.html">
+                            <img src="Assets/Images/svg/student_notification.svg" alt="Notification">
+                        </a>
+                        <div class="Button-navbar ms-auto position-relative">
+                            <img src="Assets/Images/svg/powerbutton.svg" alt="Logout" class="cursor-pointer">
+                            <!-- Dropdown Menu (if needed) -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main_content contentSection scroll_bar bg-white">
+                <div class="mb-3 justify-content-between align-items-center">
+                    <h1 class="black sub-large-text-one fw-700">
+                        Bharat SAT Exam & 3 Mock Test
+                    </h1>
+
+                    <div class="my-4 row">
+                        <div class="col-md-9">
+                            <ul class="small-medium-text fw-600 list-group list-group-horizontal gap-1 mb-4 text-white">
+                                <li class="list-group-item border-0 active"
+                                    style="cursor: pointer; border-radius: 6px; background-color: #F6821F;"
+                                    onclick="showContent('english')">English</li>
+                                <li class="list-group-item border-0" style="cursor: pointer; border-radius: 6px;"
+                                    onclick="showContent('hindi')">Hindi</li>
+                                <li class="list-group-item border-0" style="cursor: pointer; border-radius: 6px;"
+                                    onclick="showContent('mathematics')">Mathematics</li>
+                                <li class="list-group-item border-0" style="cursor: pointer; border-radius: 6px;"
+                                    onclick="showContent('history')">History</li>
+                                <li class="list-group-item border-0" style="cursor: pointer; border-radius: 6px;"
+                                    onclick="showContent('geography')">Geography</li>
+                                <li class="list-group-item border-0" style="cursor: pointer; border-radius: 6px;"
+                                    onclick="showContent('science')">Science</li>
+                            </ul>
+
+                            <div id="english" class="content-section active-content">
+                                <div class="small-medium-text fw-600 hrline2" style="color: #14489F;">
+                                    <p>Question 1</p>
+                                </div>
+
+                                <section class="small-medium-text fw-600 my-4">
+                                    <div>
+                                        <div>Read Carefully</div>
+                                        <p class="fw-400 py-2">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only five centuries, but also
+                                            the leap into electronic typesetting, remaining essentially unchanged. It
+                                            was popularised in the 1960s with the release of Letraset sheets containing
+                                            Lorem Ipsum passages, and more recently with desktop publishing software
+                                            like Aldus PageMaker including versions of Lorem Ipsum.
+                                        </p>
+                                        <div class="my-4 hrline2">
+                                            <div class="my-4">
+                                                <div class="small-medium-text fw-600 text-dark">
+                                                    <span>1. </span>What is Lorem Ipsum?
+                                                </div>
+                                                <ol class="list-group">
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-0" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-0">A. Dummy text</label>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-1" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-1">B. Real text</label>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-2" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-2">C. History of
+                                                                printing</label>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-3" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-3">D. A famous
+                                                                author</label>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="small-medium-text fw-600 pb-1 text-dark">
+                                            Which era marked a switch from agricultural practices to industrial
+                                            practices?
+                                        </div>
+                                        <ol class="list-group my-4 hrline2">
+                                            <li
+                                                class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                <div class="ms-2 me-auto form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="general-option-0" />
+                                                    <label class="form-check-label small-medium-text fw-500 px-1"
+                                                        for="general-option-0">A. The Industrial Revolution</label>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                <div class="ms-2 me-auto form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="general-option-1" />
+                                                    <label class="form-check-label small-medium-text fw-500 px-1"
+                                                        for="general-option-1">B. The New Deal</label>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                <div class="ms-2 me-auto form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="general-option-2" />
+                                                    <label class="form-check-label small-medium-text fw-500 px-1"
+                                                        for="general-option-2">C. James Madison</label>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                <div class="ms-2 me-auto form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="general-option-3" />
+                                                    <label class="form-check-label small-medium-text fw-500 px-1"
+                                                        for="general-option-3">D. Madam C.J. Walker</label>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between small-medium-text fw-400 px-2">
+                                        <button type="button"
+                                            class="btn login_btn small-text fw-600 m-0 singleLine previewbtn"
+                                            style="text-transform: none; white-space: nowrap;"
+                                            onclick="handlePrevious()">
+                                            Previous
+                                        </button>
+                                        <button type="button"
+                                            class="btn login_btn small-text fw-600 m-0 singleLine nextbtn"
+                                            style="text-transform: none; white-space: nowrap;" onclick="handleNext()">
+                                            Next
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div id="hindi" class="content-section">
+                                <div class="small-medium-text fw-600 hrline2" style="color: #14489F;">
+                                    <p>Question 1</p>
+                                </div>
+
+                                <section class="small-medium-text fw-600 my-4">
+                                    <div>
+
+                                        <div class="my-4 hrline2">
+                                            <div class="my-4">
+                                                <div class="small-medium-text fw-600 text-dark mb-3">
+                                                    <span>1. </span>भारत की प्रथम नदी घाटी परियोजना कौन सी थी।
+                                                </div>
+                                                <ol class="list-group">
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-0" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-0">A. उत्‍तर- दामोदर घाटी
+                                                                परियोजना।</label>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-1" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-1">B. नील नदी</label>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-2" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-2">C. 16 जुलाई 1939
+                                                                में</label>
+                                                        </div>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex gap-2 justify-content-between align-items-start border-0">
+                                                        <div class="ms-2 me-auto form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="comprehensive-option-0-3" />
+                                                            <label
+                                                                class="form-check-label small-medium-text fw-500 px-1"
+                                                                for="comprehensive-option-0-3">D. उच्चतम
+                                                                न्यायालय।</label>
+                                                        </div>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="d-flex justify-content-between small-medium-text fw-400 px-2">
+                                        <button type="button"
+                                            class="btn login_btn small-text fw-600 m-0 singleLine previewbtn"
+                                            style="text-transform: none; white-space: nowrap;"
+                                            onclick="handlePrevious()">
+                                            Previous
+                                        </button>
+                                        <button type="button"
+                                            class="btn login_btn small-text fw-600 m-0 singleLine nextbtn"
+                                            style="text-transform: none; white-space: nowrap;" onclick="handleNext()">
+                                            Next
+                                        </button>
+                                    </div>
+                                </section>
+                                <!-- Hindi content here -->
+                            </div>
+
+                            <div id="mathematics" class="content-section">
+                                <div class="small-medium-text fw-600 hrline2" style="color: #14489F;">
+                                    <p>Mathematics Content</p>
+                                </div>
+                                <!-- Mathematics content here -->
+                            </div>
+
+                            <div id="history" class="content-section">
+                                <div class="small-medium-text fw-600 hrline2" style="color: #14489F;">
+                                    <p>History Content</p>
+                                </div>
+                                <!-- History content here -->
+                            </div>
+
+                            <div id="geography" class="content-section">
+                                <div class="small-medium-text fw-600 hrline2" style="color: #14489F;">
+                                    <p>Geography Content</p>
+                                </div>
+                                <!-- Geography content here -->
+                            </div>
+
+                            <div id="science" class="content-section">
+                                <div class="small-medium-text fw-600 hrline2" style="color: #14489F;">
+                                    <p>Science Content</p>
+                                </div>
+                                <!-- Science content here -->
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background-color: #f3f5f6; border-radius: 20px;">
+                            <div class="timerdiv medium-text fw-500 p-4 mx-2"
+                                style="background-color: #14489F; border-radius: 20px;">
+                                <p class="text-start align-items-center justify-content-center">
+                                    <img src="Assets/Images/png/Vector.png" alt="Timer Icon" class="fw-500 pb-1 me-1" />
+                                    Time Left
+                                </p>
+                                <div class="d-flex gap-3 justify-content-start text-start gap-3">
+                                    <div class="hours">
+                                        <span class="medium-text fw-600" id="hrs">00</span>
+                                        <div class="medium-text fw-400 pt-3">Hours</div>
+                                    </div>
+                                    <div class="minutes">
+                                        <span class="medium-text fw-600" id="mins">00</span>
+                                        <div class="medium-text fw-400 pt-3">Minutes</div>
+                                    </div>
+                                    <div class="seconds">
+                                        <span class="medium-text fw-600" id="secs">00</span>
+                                        <div class="medium-text fw-400 pt-3">Seconds</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="questions-container hrline2 pb-4">
+                                <!-- Example question boxes, you would generate these dynamically in a real application -->
+                                <div class="question-box bg-grey" style="cursor: pointer;">1</div>
+                                <div class="question-box bg-grey" style="cursor: pointer;">2</div>
+                                <div class="question-box bg-grey" style="cursor: pointer;">3</div>
+                                <!-- Add more question boxes as needed -->
+                            </div>
+
+                            <div class="container m-4 d-grid gap-3">
+                                <div class="d-flex justify-content-start align-items-center gap-3 small-medium-text">
+                                    <span class="bg-green answercircle"></span>Answered
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center gap-3 small-medium-text">
+                                    <span class="bg-yellow answercircle"></span>Not Answered
+                                </div>
+                                <div class="d-flex justify-content-start align-items-center gap-3 small-medium-text">
+                                    <span class="bg-grey answercircle"></span>Not Viewed
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // Variable to keep track of the current active section
+        let currentSectionId = 'english';
+
+        function showContent(sectionId) {
+            // Hide all content sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active-content');
+            });
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.list-group-item').forEach(tab => {
+                tab.classList.remove('active');
+                tab.style.backgroundColor = '';
+            });
+
+            // Show the selected content section
+            document.getElementById(sectionId).classList.add('active-content');
+
+            // Add active class to the clicked tab
+            document.querySelector(`[onclick="showContent('${sectionId}')"]`).classList.add('active');
+            document.querySelector(`[onclick="showContent('${sectionId}')"]`).style.backgroundColor = '#F6821F';
+
+            // Update the current section id
+            currentSectionId = sectionId;
+        }
+
+        function handlePrevious() {
+            const sections = ['english', 'hindi', 'mathematics', 'history', 'geography', 'science'];
+            const currentIndex = sections.indexOf(currentSectionId);
+
+            if (currentIndex > 0) {
+                const previousSection = sections[currentIndex - 1];
+                showContent(previousSection);
+            }
+        }
+
+        function handleNext() {
+            const sections = ['english', 'hindi', 'mathematics', 'history', 'geography', 'science'];
+            const currentIndex = sections.indexOf(currentSectionId);
+
+            if (currentIndex < sections.length - 1) {
+                const nextSection = sections[currentIndex + 1];
+                showContent(nextSection);
+            }
+        }
+
+        // Example timer update function
+        function updateTimer() {
+            // Sample code to update timer, replace with actual logic
+            const now = new Date();
+            document.getElementById('hrs').textContent = now.getHours().toString().padStart(2, '0');
+            document.getElementById('mins').textContent = now.getMinutes().toString().padStart(2, '0');
+            document.getElementById('secs').textContent = now.getSeconds().toString().padStart(2, '0');
+        }
+        setInterval(updateTimer, 1000);
+
+    </script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Assets/css/stylesheet.css">
+    <link rel="stylesheet" href="Assets/css/studentstyle.css">
+    <title>Profile</title>
+</head>
+<style>
+    .form-control:focus {
+    border-color: #F6821F; /* Focus border color */
+    box-shadow: none /* Optional: Add a shadow for better visibility */
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+.profile_inputs .col-md-6{
+    margin-bottom: 24px;
+}
+</style>
+<body>
+    <div class="d-flex">
+         <!-- Sidebar -->
+         <div class="sidebar d-flex flex-column overflow-auto">
+            <div class="logo mt-3 mb-5">
+                <a href="dashboard-packages.html">
+                    <img src="Assets/Images/png/dashboardLogo.png" class="img-fluid object-fit-contain" alt="Logo"
+                        style="height: 60px;">
+                </a>
+            </div>
+            <div class="mx-2 my-4 student-profile-section">
+                <div class="d-flex justify-content-center select_profile_img">
+                    <img src="Assets/Images/svg/user_profile.svg" class="modal_profile" alt="Profile">
+                    <div class="position-relative">
+                        <a
+                            class="secondary fs-16 fw-500 edit_img d-flex justify-content-center align-items-center cursor-pointer">
+                            <img src="Assets/Images/svg/profile_editng.svg" alt="Edit Profile">
+                        </a>
+                    </div>
+                </div>
+                <div class="profile_text mb-4 text-center">
+                    <h2 class="white medium-text fw-600">Rohit Sharma</h2>
+                    <h3 class="white small-text fw-400">12th Class (English)</h3>
+                </div>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="dashboard-packages.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/packages.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Packages</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="study-material.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Study Materials.svg" alt="Menu Icon">
+                            <div class="d-flex gap-2 align-items-center">
+                                <h1 class="white small-medium-text fw-600 mb-0"
+                                    style="margin-top: 1px; white-space: nowrap;">Study Materials</h1>
+                                <span class="Caption Basics fw-600">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="mock-test.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Mock Test.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Mock Test</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="order-history.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Order History.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Order History</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="change-password.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderInactive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/Change Password.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Change Password
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="d-flex flex-column ps-4 mb-3">
+                <a href="profile.html">
+                    <div class="d-flex gap-3 py-3 ps-3 pe-3 align-items-center accordianHeader accordianHeaderActive">
+                        <div class="d-flex gap-3">
+                            <img src="Assets/Images/svg/user.svg" alt="Menu Icon">
+                            <h1 class="white small-medium-text fw-600 mb-0" style="margin-top: 1px;">Profile
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="mainLayout-content">
+            <nav class="topnavbar d-flex align-items-center justify-content-between">
+                <h4 class="blue mb-0 sub-large-text-one fw-600">Welcome</h4>
+                <div class="right-admin-profile d-flex align-items-center" style="padding-right: 30px;">
+                    <div class="d-flex align-items-center gap-4">
+                        <a href="cart.html">
+                            <img src="Assets/Images/svg/addtocart.svg" alt="Add to Cart">
+                        </a>
+                        <a href="notification.html">
+                            <img src="Assets/Images/svg/student_notification.svg" alt="Notification">
+                        </a>
+                        <div class="Button-navbar ms-auto position-relative">
+                            <img src="Assets/Images/svg/powerbutton.svg" alt="Logout" class="cursor-pointer">
+                            <!-- Dropdown Menu (if needed) -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="main_content contentSection scroll_bar">
+                <div class="mb-4 d-flex justify-content-between align-items-center">
+                    <h1 class="black sub-large-text-one fw-700 mb-0">Profile Details</h1>
+                </div>
+                <form>
+                    <div class="d-flex flex-column p-0">
+
+                        <div class="d-flex flex-column justify-content-center mt-4">
+                            <div class="d-flex justify-content-center select_profile_img student-profile">
+                                <!-- Profile Picture -->
+                                <img class="modal_profile" style="object-fit: cover;" src="Assets/Images/svg/user_profile.svg"
+                                    alt="Profile Picture"
+                                    onerror="this.onerror=null; this.src='path_to_default_image';" />
+                                <div class="position-relative">
+                                    <a
+                                        class="secondary fs-16 fw-500 edit_img d-flex justify-content-center align-items-center cursor-pointer">
+                                        <img src="Assets/Images/svg/profile_editng.svg" alt="Edit Icon"
+                                            style="height: 15px; width: 15px;" />
+                                    </a>
+                                    <input type="file" class="edit_img opacity-0" accept="image/*" name="fileupload"
+                                        onchange="handleFileUpload(event)" />
+                                </div>
+                                <!-- Profile Modal -->
+                                <div id="profileModal" class="modal fade" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Update Profile Picture</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>Delete Photo</p>
+                                                <button type="button" class="btn btn-primary"
+                                                    onclick="updateProfilePic()">Update Photo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 mt-5 d-flex justify-content-between align-items-center">
+                            <h1 class="blue sub-large-text-one fw-600 mb-0">Personal Details</h1>
+                        </div>
+                        <div class="hrline2" style="margin-right: 30px;"></div>
+                        <div class="row profile_inputs mt-4 w-100">
+                            <div class="col-md-6">
+                                <input type="text" placeholder="First Name" class="form-control coprofile_edit"
+                                    value="First Name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Middle Name" class="form-control coprofile_edit"
+                                    value="Middle Name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Last Name" class="form-control coprofile_edit"
+                                    value="Last Name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Date Of Birth" class="form-control coprofile_edit"
+                                    value="Date Of Birth" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Gender" class="form-control coprofile_edit"
+                                    value="Gender" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="School Name" class="form-control coprofile_edit"
+                                    value="School Name" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Medium" class="form-control coprofile_edit"
+                                    value="Medium" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Class" class="form-control coprofile_edit" value="Class"
+                                    />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Register By" class="form-control coprofile_edit"
+                                    value="Register By" />
+                            </div>
+                            <div class="col-md-6" style="display: none;">
+                                <input type="text" placeholder="Unique Code" class="form-control coprofile_edit"
+                                    value="Unique Code" />
+                            </div>
+                        </div>
+                        <div class="pb-4 mt-5 d-flex justify-content-between align-items-center">
+                            <h1 class="blue sub-large-text-one fw-600 mb-0">Contact Details</h1>
+                        </div>
+                        <div class="hrline2" style="margin-right: 30px;"></div>
+                        <div class="row profile_inputs mt-4 w-100">
+                            <div class="col-md-6">
+                                <input type="email" placeholder="Email" class="form-control coprofile_edit"
+                                    value="email@example.com" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" placeholder="Mobile" class="form-control coprofile_edit"
+                                    value="Mobile Number" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Address Line-1" class="form-control coprofile_edit"
+                                    value="Address Line-1" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Address Line-2" class="form-control coprofile_edit"
+                                    value="Address Line-2" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="State" class="form-control coprofile_edit" value="State"
+                                    />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="District" class="form-control coprofile_edit"
+                                    value="District" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Taluka" class="form-control coprofile_edit"
+                                    value="Taluka" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Pincode" class="form-control coprofile_edit"
+                                    value="Pincode" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                // Handle file upload
+                console.log('File selected:', file);
+                // Add file upload logic here
+            }
+        }
+
+        function updateProfilePic() {
+            // Handle profile picture update logic here
+            console.log('Profile picture updated');
+        }
+    </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+</body>
+
+</html>
